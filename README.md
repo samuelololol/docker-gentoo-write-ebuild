@@ -1,4 +1,4 @@
 docker-gentoo-write-ebuild
 ==========================
 
-A gentoo docker images for helping writing ebuild
+A gentoo docker image for helping writing ebuilds
