@@ -1,5 +1,6 @@
 FROM samuelololol/docker-gentoo-websync
 MAINTAINER samuelololol <samuelololol@gmail.com>
+RUN rm /sbin/unix_chkpwd
 RUN echo ">=dev-lang/python-2.7.12:2.7 sqlite" >> /etc/portage/package.use/layman
 RUN echo ">=dev-lang/python-3.4.5 sqlite" >> /etc/portage/package.use/layman
 RUN echo "app-portage/layman git mercurial sqlite subversion" >> /etc/portage/package.use/layman
