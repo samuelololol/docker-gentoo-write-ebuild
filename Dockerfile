@@ -1,6 +1,8 @@
 FROM samuelololol/docker-gentoo-websync
 MAINTAINER samuelololol <samuelololol@gmail.com>
-RUN echo "app-portage/layman git mercurial sqlite subversion" >> /etc/portage/package.use/package.use
+RUN echo ">=dev-lang/python-2.7.12:2.7 sqlite" >> /etc/portage/package.use/layman
+RUN echo ">=dev-lang/python-3.4.5 sqlite" >> /etc/portage/package.use/layman
+RUN echo "app-portage/layman git mercurial sqlite subversion" >> /etc/portage/package.use/layman
 RUN emerge -uv layman
 #RUN mkdir -p /usr/local/portage/{metadata,profiles}
 COPY portage /usr/local/portage
