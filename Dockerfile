@@ -24,3 +24,8 @@ RUN echo 'location = /usr/local/portage' >> /etc/portage/repos.conf/localrepo.co
 
 #update eix database
 RUN eix-update
+
+#add command alias
+RUN echo "alias l='ls -l'" >> /root/.bashrc
+RUN echo "alias lh='l -h'" >> /root/.bashrc
+RUN echo "alias la='l -a'" >> /root/.bashrc
